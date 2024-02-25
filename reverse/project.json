@@ -1,0 +1,19 @@
+{
+  "name": "reverse",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "reverse/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/reverse",
+        "main": "reverse/src/index.ts",
+        "tsConfig": "reverse/tsconfig.lib.json",
+        "assets": ["reverse/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
